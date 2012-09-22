@@ -1,0 +1,13 @@
+Specificity Calculator
+======================
+
+Thanks for installing Specificity Calculator. Press Command+Option+Shift+S to find the specificity of CSS selectors on the current line.
+
+Please note that NodeJS is required to run Specificity Calculator. If you do not have NodeJS installed, go to http://nodejs.org
+
+If Specificity Calculator still doesn't work, please follow these steps:
+1. Go to Sublime Text 2 > Preferences > Package Settings > Specificity Calculator > Settings - Default
+2. Copy the default settings
+3. Go to Sublime Text 2 > Preferences > Package Settings > Specificity Calculator > Settings - User
+4. Paste the settings
+5. Change the "node_path" setting to point to NodeJS on your system

@@ -1,0 +1,37 @@
+[
+	{
+		"id": "preferences",
+		"children":
+		[
+			{
+				"id": "package-settings",
+				"children":
+				[
+					{
+						"caption": "Specificity Calculator",
+						"children":
+						[
+							{
+								"command": "open_file",
+								"args":
+								{
+									"file": "${packages}/Specificity Calculator/Specificity Calculator.sublime-settings"
+								},
+								"caption": "Settings – Default"
+							},
+							{
+								"command": "open_file",
+								"args":
+								{
+									"file": "${packages}/User/Specificity Calculator.sublime-settings"
+								},
+								"caption": "Settings – User"
+							},
+							{ "caption": "-" }
+						]
+					}
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,12 @@
+{
+	"schema_version": "1.2",
+	"packages": [
+		{
+			"name": "Specificity Calculator",
+			"description": "Press Command+Option+S to find the specificity of CSS selectors on the current line",
+			"author": "Keegan Street",
+			"homepage": "https://github.com/keeganstreet/sublime-specificity",
+			"last_modified": "2012-09-22 20:33:00"
+		}
+	]
+}

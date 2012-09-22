@@ -1,0 +1,6 @@
+[
+	{
+		"keys": ["ctrl+option+shift+s"],
+		"command": "specificity_calculator"
+	}
+]
