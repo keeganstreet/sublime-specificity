@@ -25,15 +25,16 @@ class SpecificityCalculatorCommand(sublime_plugin.TextCommand):
 	def handle_thread(self, thread):
 		if (thread.isAlive()):
 			sublime.set_timeout(lambda: self.handle_thread(thread), 100)
-		else:
-			if (thread.result != False):
-				# Show the result in an output window
-				output_panel = self.view.window().get_output_panel("specificity")
-				edit = output_panel.begin_edit()
-				output_panel.insert(edit, output_panel.size(), thread.result)
-				output_panel.end_edit(edit)
-				self.view.window().run_command("show_panel", {"panel": "output.specificity"})
+		elif (thread.result != False):
+			self.show_result(thread.result)
 
+	def show_result(self, result):
+		# Show the result in an output window
+		output_panel = self.view.window().get_output_panel("specificity")
+		edit = output_panel.begin_edit()
+		output_panel.insert(edit, output_panel.size(), result)
+		output_panel.end_edit(edit)
+		self.view.window().run_command("show_panel", {"panel": "output.specificity"})
 
 class NodeJS(threading.Thread):
 
@@ -55,4 +56,3 @@ class NodeJS(threading.Thread):
 		except OSError:
 			sublime.error_message('Error calling NodeJS app')
 			self.result = False
-
