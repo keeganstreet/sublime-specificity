@@ -48,7 +48,8 @@ class NodeJS(threading.Thread):
 			process = subprocess.Popen(self.args,
 				stdin = subprocess.PIPE,
 				stdout = subprocess.PIPE,
-				stderr = subprocess.STDOUT)
+				stderr = subprocess.STDOUT,
+				shell = True)
 
 			# Make the result accessible by the main thread
 			self.result = process.communicate()[0]
