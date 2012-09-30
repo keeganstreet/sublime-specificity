@@ -30,11 +30,11 @@ class SpecificityCalculatorCommand(sublime_plugin.TextCommand):
 
 	def show_result(self, result):
 		# Show the result in an output window
-		output_panel = self.view.window().get_output_panel("specificity")
+		output_panel = self.view.window().get_output_panel('specificity')
 		edit = output_panel.begin_edit()
 		output_panel.insert(edit, output_panel.size(), result)
 		output_panel.end_edit(edit)
-		self.view.window().run_command("show_panel", {"panel": "output.specificity"})
+		self.view.window().run_command('show_panel', {'panel': 'output.specificity'})
 
 class NodeJS(threading.Thread):
 
